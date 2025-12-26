@@ -2,8 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-
-// Замените эти значения на ваши из Firebase Console
+
 const firebaseConfig = {
   apiKey: "AIzaSyBxY6r9wq8Jz8q8Jz8q8Jz8q8Jz8q8Jz8q8",
   authDomain: "your-app.firebaseapp.com",
