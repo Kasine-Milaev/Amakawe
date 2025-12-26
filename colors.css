@@ -1,0 +1,107 @@
+/* src/styles/colors.css */
+
+/* Базовые стили с CSS-переменными */
+:root {
+  --bg-primary: #0f1117;
+  --bg-secondary: #1a1c23;
+  --bg-card: #16181d;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --border-color: #2a2d35;
+  --accent: #3b82f6;
+}
+
+/* Дополнительные переменные для консистентности */
+:root {
+  --hover-bg: rgba(255, 255, 255, 0.1);
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --success-color: #10b981;
+  --error-color: #ef4444;
+  --warning-color: #f59e0b;
+}
+
+/* Для обратной совместимости с data-theme атрибутами */
+:root[data-theme="dark"] {
+  --bg-primary: #0f1117;
+  --bg-secondary: #1a1c23;
+  --bg-card: #16181d;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --border-color: #2a2d35;
+  --accent: #3b82f6;
+}
+
+:root[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --border-color: #e2e8f0;
+  --accent: #3b82f6;
+}
+
+:root[data-theme="sakura"] {
+  --bg-primary: #fff5f7;
+  --bg-secondary: #ffeef1;
+  --bg-card: #ffeef1;
+  --text-primary: #4a044e;
+  --text-secondary: #7c3aed;
+  --border-color: #fbcfe8;
+  --accent: #ec4899;
+}
+
+:root[data-theme="tokyo_night"] {
+  --bg-primary: #0a0a1f;
+  --bg-secondary: #111127;
+  --bg-card: #16162d;
+  --text-primary: #e0e0ff;
+  --text-secondary: #a0a0ff;
+  --border-color: #333355;
+  --accent: #6366f1;
+}
+
+:root[data-theme="bamboo"] {
+  --bg-primary: #0a1f0a;
+  --bg-secondary: #152715;
+  --bg-card: #1a2f1a;
+  --text-primary: #d4f7d4;
+  --text-secondary: #9ae69a;
+  --border-color: #2a4a2a;
+  --accent: #10b981;
+}
+
+:root[data-theme="geisha"] {
+  --bg-primary: #1a0a0a;
+  --bg-secondary: #2a1515;
+  --bg-card: #351a1a;
+  --text-primary: #ffd6d6;
+  --text-secondary: #ffa5a5;
+  --border-color: #5a2a2a;
+  --accent: #dc2626;
+}
+
+/* Автоматическая тема */
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="auto"] {
+    --bg-primary: #0f1117;
+    --bg-secondary: #1a1c23;
+    --bg-card: #16181d;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --border-color: #2a2d35;
+    --accent: #3b82f6;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root[data-theme="auto"] {
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --bg-card: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --border-color: #e2e8f0;
+    --accent: #3b82f6;
+  }
+}

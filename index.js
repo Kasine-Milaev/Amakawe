@@ -1,0 +1,45 @@
+// src/locales/index.js
+export const translations = {
+  ru: {
+    settings: 'Настройки',
+    notifications: 'Уведомления',
+    receiveNotifications: 'Получать уведомления',
+    playback: 'Воспроизведение',
+    autoContinue: 'Автопродолжение',
+    defaultQuality: 'Качество по умолчанию',
+    appearance: 'Внешний вид',
+    theme: 'Тема',
+    language: 'Язык',
+    interfaceLanguage: 'Язык интерфейса',
+    clearData: 'Очистка данных',
+    clearCache: 'Очистить кэш',
+    resetSettings: 'Сбросить настройки',
+    back: 'Назад',
+    dark: 'Темная',
+    light: 'Светлая',
+    auto: 'Авто',
+    russian: 'Русский',
+    english: 'English'
+  },
+  en: {
+    settings: 'Settings',
+    notifications: 'Notifications',
+    receiveNotifications: 'Receive notifications',
+    playback: 'Playback',
+    autoContinue: 'Auto continue',
+    defaultQuality: 'Default quality',
+    appearance: 'Appearance',
+    theme: 'Theme',
+    language: 'Language',
+    interfaceLanguage: 'Interface language',
+    clearData: 'Clear data',
+    clearCache: 'Clear cache',
+    resetSettings: 'Reset settings',
+    back: 'Back',
+    dark: 'Dark',
+    light: 'Light',
+    auto: 'Auto',
+    russian: 'Russian',
+    english: 'English'
+  }
+};

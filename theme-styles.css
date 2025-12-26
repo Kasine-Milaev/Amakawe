@@ -1,0 +1,200 @@
+/* src/theme-styles.css */
+/* Тема по умолчанию (dark) */
+body.theme-dark {
+  color-scheme: dark;
+}
+
+/* Светлая тема */
+body.theme-light {
+  color-scheme: light;
+}
+
+/* Тема Сакура */
+body.theme-sakura {
+  color-scheme: light;
+}
+
+/* Ночь Токио */
+body.theme-tokyo_night {
+  color-scheme: dark;
+}
+
+/* Бамбук */
+body.theme-bamboo {
+  color-scheme: dark;
+}
+
+/* Гейша/Редфор */
+body.theme-geisha {
+  color-scheme: dark;
+}
+
+/* Предпросмотр тем */
+.theme-previews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.theme-preview {
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.2s, border-color 0.2s;
+  position: relative;
+}
+
+.theme-preview:hover {
+  transform: translateY(-2px);
+}
+
+.theme-preview.active {
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.theme-preview-header {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.theme-color-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-info h4 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.theme-description {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  line-height: 1.3;
+}
+
+.theme-active-indicator {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: var(--accent);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.current-theme-display {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.current-theme-display:hover {
+  border-color: var(--accent);
+}
+
+.theme-color-preview {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.dropdown-arrow {
+  margin-left: auto;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.quick-theme-buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.theme-quick-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  background-color: var(--bg-card);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.theme-quick-button:hover {
+  transform: scale(1.1);
+  border-color: var(--accent);
+}
+
+.theme-quick-button.dark {
+  background: linear-gradient(135deg, #0f1117, #2a2d35);
+  color: white;
+}
+
+.theme-quick-button.light {
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
+  color: #1e293b;
+}
+
+.theme-quick-button.sakura {
+  background: linear-gradient(135deg, #ffeef1, #fff5f7);
+  color: #ec4899;
+}
+
+.theme-quick-button.tokyo_night {
+  background: linear-gradient(135deg, #0a0a1f, #111127);
+  color: #6366f1;
+}
+
+/* Специальные стили для конкретных тем */
+body.theme-sakura .navbar-logo {
+  color: #ec4899;
+}
+
+body.theme-bamboo .button-incan {
+  background-color: #10b981;
+}
+
+body.theme-geisha .button-incan {
+  background-color: #dc2626;
+}
+
+body.theme-light .genre-button {
+  color: #1e293b;
+}
+
+body.theme-light .navbar-item {
+  color: #1e293b;
+}
+
+body.theme-light .navbar-item:hover {
+  color: #3b82f6;
+}
