@@ -71,6 +71,43 @@ API интеграции
 
 🎴 Редфор — элегантная красно-черная тема
 
+## 📦 Зависимости проекта
+Node.js и npm
+Node.js версии 18.x или выше
+
+npm версии 9.x или выше
+
+## Основные зависимости (package.json)
+dependencies:
+
+{
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0"
+  }
+}
+
+## devDependencies:
+
+{
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.32",
+    "vite": "^5.0.8"
+  }
+}
+## Установка всех зависимостей одной командой
+npm install react react-dom react-router-dom
+npm install -D @types/react @types/react-dom @vitejs/plugin-react autoprefixer eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh postcss vite
+
 ## 📄 Лицензия
 Этот проект распространяется под лицензией MIT. Подробнее см. в файле LICENSE.
 
